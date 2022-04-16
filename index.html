@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script defer src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Quizz žaidimas</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="title">Quizz žaidimas apie Lietuvą</h1>
+      </header>
+      <div class="game-box">
+        <h2 class="question">Lietuvos sostinė?</h2>
+        <button class="btn-answer">
+          <p><strong>A.</strong></p>
+          <p class="btn-answer-A">Klaipėda</p>
+        </button>
+        <button class="btn-answer">
+          <p><strong>B.</strong></p>
+          <p class="btn-answer-B">Kaunas</p>
+        </button>
+        <button class="btn-answer">
+          <p><strong>C.</strong></p>
+          <p class="btn-answer-C">Vilnius</p>
+        </button>
+        <button class="btn-answer">
+          <p><strong>D.</strong></p>
+          <p class="btn-answer-D">Ryga</p>
+        </button>
+        <button class="btn-next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13 5l7 7-7 7M5 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+      <div class="game-box-points">
+        <p class="question-number-text">
+          Klausimas:&nbsp;<span class="question-number">1/20</span>
+        </p>
+        <div class="points-box">
+          <p>TAŠKAI:&nbsp;</p>
+          <p class="points">0</p>
+        </div>
+        <div class="points-end">
+          <p class="points-end-text">
+            Atsakei teisingai į:&nbsp; 10 klausimų
+            <p class="points-end-num">50% Teisingų atsakymų</p>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
