@@ -130,10 +130,10 @@ btnNext.addEventListener("click", function () {
     questionNumber.textContent = `${questionsCount + 1}/${answers.length}`;
 
     if (questionsCount === 1) {
-      nextQuestion(Q2, "Nemunas", "Šventoji", "Neris", "Nilas");
+      nextQuestion(Q2, "Nemunas", "Šventoji", "Neris", "Venta");
     }
     if (questionsCount === 2) {
-      nextQuestion(Q3, "Tauragnas", "Tauras", "Vištyčių", "Tauranas");
+      nextQuestion(Q3, "Tauragnas", "Platelių", "Vištyčio", "Asveja");
     }
     if (questionsCount === 3) {
       nextQuestion(Q4, "Rytas", "Lietkabelis", "Juventus", "Žalgiris");
@@ -142,7 +142,13 @@ btnNext.addEventListener("click", function () {
       nextQuestion(Q5, "Marijampolė", "Pasvalys", "Pakruojis", "Biržai");
     }
     if (questionsCount === 5) {
-      nextQuestion(Q6, "Lipakė", "Kretinga", "Nida", "Rusnė");
+      nextQuestion(
+        Q6,
+        "Briedžių sala",
+        "Ragininkų sala",
+        "Nemuno sala",
+        "Rusnės sala"
+      );
     }
     if (questionsCount === 6) {
       nextQuestion(Q7, "Kaunas", "Vilnius", "Utena", "Klaipėda");
@@ -187,15 +193,15 @@ btnNext.addEventListener("click", function () {
       );
     }
     if (questionsCount === 16) {
-      nextQuestion(Q17, "Aukštikas", "Raganų Kalnas", "Aukštojas", "Kalvinas");
+      nextQuestion(Q17, "Juozapinės", "Raganų Kalnas", "Aukštojas", "Bajorų");
     }
     if (questionsCount === 17) {
       nextQuestion(
         Q18,
-        "Šervudo giria",
+        "Dainavos giria",
         "Labanoro giria",
         "Šimonių giria",
-        "Anykščių giria"
+        "Žalioji giria"
       );
     }
     if (questionsCount === 18) {
@@ -223,10 +229,11 @@ btnNext.addEventListener("click", function () {
           ".points-end-text"
         ).textContent = `Atsakei teisingai į ${points} klausimus`;
       }
-      if (points < 20 && points >= 10) {
+      if (points <= 20 && points >= 10) {
         document.querySelector(
           ".points-end-text"
         ).textContent = `Atsakei teisingai į ${points} klausimų`;
+        console.log(` taškai: ${points}`);
       }
     }
     document.querySelector(".points-end-num").textContent = `${(
