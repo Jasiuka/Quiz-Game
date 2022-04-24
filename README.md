@@ -1,5 +1,6 @@
-# Quizz-Game
-Simple web quizz game app
+# Quiz-Game
+Simple web quiz game app
+https://jasiuka.github.io/Quizz-Game/
 
 2022/04/16:
 Simple quizz game with questions about Lithuania, used event delegation for button clicks
