@@ -33,13 +33,13 @@ const Q11 = "10 didžiausias Lietuvos miestas pagal gyventojų skaičių (2020m)
 const Q12 = "Kas parašė dainą 'Trys Milijonai'?";
 const Q13 = "Kokia upė teka per Vilnių?";
 const Q14 =
-  "Koks buvo pereinamasis Lietuvos Respublikos laikinasis popierinis pinigas?";
+  "Koks buvo pereinamasis 1919-22 metų Lietuvos Respublikos laikinasis popierinis pinigas?";
 const Q15 = "Kokia buvo pirmoji Lietuvos religija prieš Mindaugo karūnavimą?";
 const Q16 = "Ką reiškia trumpinys LDK?";
 const Q17 = "Didžiausia Lietuvos kalva?";
 const Q18 = "2 pagal dydį Lietuvos giria?";
 const Q19 = "Didžiausias riedulys Lietuvoje?";
-const Q20 = "Ką reiškia trumpinys KMHB?";
+const Q20 = "Kokį paukštį vadiname nacionaliniu Lietuvos paukščiu?";
 
 const answers = [
   "Vilnius",
@@ -61,7 +61,7 @@ const answers = [
   "Aukštojas",
   "Labanoro giria",
   "Barstyčių",
-  "Karaliaus Mindaugo Husarų Batalionas",
+  "Gandras",
 ];
 
 //           FUNCTIONS
@@ -208,13 +208,7 @@ btnNext.addEventListener("click", function () {
       nextQuestion(Q19, "Barstyčių", "Puntuko", "Velnio akmuo", "Akmeno");
     }
     if (questionsCount === 19) {
-      nextQuestion(
-        Q20,
-        "Kaip Man Hujova Buvo",
-        "Kažkada Mes Husarai Buvome",
-        "Karaliaus Mindaugo Husarų Batalionas",
-        "Kur Mes Herkonus Bandėm"
-      );
+      nextQuestion(Q20, "Vanagas", "Balandis", "Gandras", "Zylė");
     }
     if (questionsCount === 20) {
       next = false;
